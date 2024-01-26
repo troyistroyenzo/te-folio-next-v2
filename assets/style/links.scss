@@ -1,0 +1,162 @@
+@import "./base.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Syne&display=swap');
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+@import url('http://fonts.cdnfonts.com/css/futura-md-bt');
+@import url('http://fonts.cdnfonts.com/css/avenir-next-lt-pro');
+
+
+
+.link {
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: currentColor;
+        transform: scale3d(0, 1, 1);
+        transform-origin: right;
+        transition: transform .3s cubic-bezier(0.5, 0.5, 0.3, 1);
+
+    }
+
+    &:after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        height: 100%;
+        transform: translate3d(150%, 0, 0);
+        transition: transform .4s cubic-bezier(0.5, 0.5, 0.3,1);
+    }
+
+    & span {
+        transition: transform .3s cubic-bezier(0.5, 0.5, 0.3, 1);
+    }
+
+    &:hover:before {
+        transform: scale3d(1,1,1);
+        transform-origin: left;
+    }
+
+    &:hover:after {
+        transform: translate3d(0, 0, 0);
+        
+    }
+
+    &:hover span {
+        transform: translate3d(-150%, 0, 0);
+        transition: transform .2s cubic-bezier(0.5, 0.5, 0.3, 1);
+    }
+}
+
+.homeButton {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    width: 175px;
+    height: 120px;
+    border: none;
+    color: white;
+    background: none;
+    &:before,
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:before {
+        content: "";
+        background: white;
+        clip-path: path(
+        "M154.5,88.5 C131,114.5 62.5,110 20,89.5 C-2.5,69 -3.5,42 4.5,25.5 C12.5,9 33.5,-6 85,3.5 C136.5, 13 178,63.5 154.5,88.5 Z"
+        );
+        transition: clip-path 0.3s cubic-bezier(0.677,1.3,0.645,0.55);
+    }
+
+    &:hover:before {
+        clip-path: path(
+            "M143,77 C117,96 74, 100.5 45.4,91.5 C17,82.5 -10.5,57 5.5,31.5 C21.5,6 79,-5.5 130.5, 4 C182,13.5 169,58 143,77 Z"
+        );
+    }
+    & span {
+        mix-blend-mode: difference;
+        font-weight: 500;
+    }
+    &:after {
+        content: "";
+        height: 95%;
+        width: 95%;
+        border: 1px solid white;
+        border-radius: 58% 42% 55% 45% / 56% 45% 55% 44%;
+        transform: rotate(-20deg);
+        transition: transform 0.5s cubic-bezier(0.677,1.3,0.645,0.55);
+    }
+    &:hover:after {
+        transform: translate3d(0,-3px,0);
+    }
+
+    @media (max-width:800px) {
+        & {
+            transform: scale3d(0.7, 0.7, 0.7);
+            font-size: 17px;
+        }
+    }
+}
+
+.coloredIcon {
+    color: white;
+    font-size: 35px;
+    &:hover {
+        animation: coloredIconAnimation 0.2s infinite;
+    }
+    @keyframes coloredIconAnimation {
+        0% {
+            text-shadow: 5px 4px $red-color, -5px -6px $blue-color;
+        }
+        25% {
+            text-shadow: -5px -6px $red-color, 5px 4px $blue-color;
+        }
+        50% {
+            text-shadow: 5px -4px $red-color, -8px 4px $blue-color;
+        }
+        75% {
+            text-shadow: -8px -4px $red-color, -5px -4px $blue-color;
+        }
+        100% {
+            text-shadow: -5px 0 $red-color, 5px -4px $blue-color;
+        }
+    }
+}
+
+.circleButton {
+    position: relative;
+    display: inline-block;
+    .textcircle {
+        display: block;
+        width: 250px;
+        animation: rotate 10s linear infinite;
+        text {
+            font-style: 32px;
+            text-transform: uppercase;
+            fill: #000;
+        }
+    }
+    @keyframes rotate {
+        to {
+            transform: rotate(-360def);
+        }
+    }
+    &:hover {
+        text {
+            font-weight: 500;
+        }
+    }
+}

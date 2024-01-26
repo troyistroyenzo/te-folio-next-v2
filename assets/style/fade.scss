@@ -1,0 +1,19 @@
+@keyframes fade-in{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.fade-in-first {
+    transition-delay: 5s;
+    animation: fade-in ease-in 3s;
+}
+
+.fade-in-second {
+    transition-delay: 7s;
+    animation: fade-in ease-in 3s;
+}
+
+.fade-in-third {
+    transition-delay: 9s;
+    animation: fade-in ease-in 6s;
+}
