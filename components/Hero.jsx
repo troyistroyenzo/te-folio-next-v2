@@ -2,6 +2,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { SphereGeometry, BoxGeometry, TorusGeometry, Mesh, Color } from 'three';
 
 const Scene = () => {
+  
   useFrame(({ clock, camera, scene }) => {
     const time = clock.getElapsedTime();
 

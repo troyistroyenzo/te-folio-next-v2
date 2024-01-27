@@ -3,7 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar"
 import { ChakraProvider } from "@chakra-ui/react";
-
+import { PrismicPreview } from '@prismicio/next'
+import { repositoryName } from '@/prismicio'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
           <Navbar/>
           {children}
           {/* <Footer/> */}
+          <PrismicPreview repositoryName={repositoryName}/>
      </ChakraProvider>
           
       </body>
