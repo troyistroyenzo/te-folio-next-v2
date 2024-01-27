@@ -40,7 +40,7 @@ const Scene = () => {
     scene.getObjectByName('torus').rotation.y -= 0.001;
 
     // Camera animation
-    camera.position.z = time * 0.1;
+    // camera.position.z = time * 0.1;
   });
 
   return (
