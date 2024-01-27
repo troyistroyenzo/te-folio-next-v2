@@ -4,7 +4,21 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-interface FeaturedDocumentData {}
+/**
+ * Content for featured documents
+ */
+interface FeaturedDocumentData {
+  /**
+   * Description field in *featured*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: featured.description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+}
 
 /**
  * featured document from Prismic

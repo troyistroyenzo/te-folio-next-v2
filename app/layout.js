@@ -26,15 +26,3 @@ export default function RootLayout({ children }) {
   );
 }
 
-
-// Call request - Prismic
-export async function getServerSideProps () {
-  const articles = await Client().query(
-    Prismic.Predicates.at("document.type", "featured")
-  );
-  console.log(articles);
-
-  return {
-    props : { }
-  };
-}
