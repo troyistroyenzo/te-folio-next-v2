@@ -52,11 +52,11 @@ const Scene = () => {
       </mesh>
       <mesh name="sphere" position={[0, 0, 0]} rotation={[0, 0, 0]}>
         <sphereGeometry args={[4, 22, 8]} />
-        <meshBasicMaterial color={0xffffff} wireframe />
+        <meshBasicMaterial color={0xC2B498} wireframe />
       </mesh>
       <mesh name="torus" position={[0, 0, 0]} rotation={[0, 0, 0]}>
         <torusGeometry args={[3, 1, 16, 100]} />
-        <meshBasicMaterial color={0xffffff} wireframe />
+        <meshBasicMaterial color={0xC2B498} wireframe />
       </mesh>
     </>
   );
