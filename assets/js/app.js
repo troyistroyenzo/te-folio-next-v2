@@ -1,2 +1,0 @@
-import imagesLoaded from "imagesloaded";
-
