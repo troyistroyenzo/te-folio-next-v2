@@ -61,7 +61,7 @@ export default function SmallWithLogoLeft() {
     >
       <Container
         bg={'black'}
-        color={'white'}
+        color={'#C2B498'}
         as={Stack}
         maxW={'9xl'}
         py={9}

@@ -58,7 +58,7 @@ import {
                 <br />
                 <Text
                   fontFamily={'inter'}
-                  color={'white'}
+                  color={'#C2B498'}
                   fontWeight={500}
                   fontSize={'1xl'}
                 >

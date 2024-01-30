@@ -18,8 +18,8 @@ const settings = {
   fade: true,
   infinite: true,
   autoplay: true,
-  speed: 500,
-  autoplaySpeed: 5000,
+  speed: 5000,
+  autoplaySpeed: 50000,
   slidesToShow: 1,
   slidesToScroll: 1,
 };
@@ -30,7 +30,7 @@ const cards = [
     video: 'https://www.youtube.com/watch?v=_Npc61m8NiI&ab_channel=TroyEnzo',
     thumbnail:
       '',
-    alt: 'Design Projects 1 Alt Text',
+    alt: 'Director, Lead Videographer, Video Editor',
   },
   {
     title: 'SB19 Live at the Araneta Colisuem (2022)',
@@ -102,22 +102,24 @@ export default function VideoCaptionCarousel() {
                 top="50%"
                 transform="translate(0, -50%)"
               >
+                
+                <Heading fontSize={{ base: '2xl', md: '3xl', lg: '3xl' }} color='#C2B498'>
+                  {card.title}
+                </Heading>
+                <Text fontSize={{ base: 'md', lg: 'lg' }} color='#C2B498'>
+                  {card.alt}
+                </Text>
                 <ReactPlayer
                   url={card.video}
-                  width="lg"
-                  height="lg"
+                  width="100%"
+                  height="20vh"
                   controls
                   playing
                   loop
                   muted
                 />
-                <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} color="white">
-                  {card.title}
-                </Heading>
-                <Text fontSize={{ base: 'md', lg: 'lg' }} color="white">
-                  {card.alt}
-                </Text>
               </Stack>
+              
             </Container>
           </Box>
         ))}

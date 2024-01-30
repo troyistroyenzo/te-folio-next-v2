@@ -36,7 +36,7 @@ export default function SimpleAccordion() {
       minH={'20vh'}
       align={'center'}
       justify={'center'}
-      color={'white'}
+      color={'#C2B498'}
       bg={useColorModeValue('black', 'gray.800')}>
       <Container>
         <Accordion allowMultiple width="100%" maxW="1xl" rounded="lg">
