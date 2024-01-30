@@ -1,5 +1,7 @@
 import { Canvas, useFrame } from '@react-three/fiber';
 import { SphereGeometry, BoxGeometry, TorusGeometry, Mesh, Color } from 'three';
+import React, { useRef } from 'react';
+
 
 const Scene = () => {
   
@@ -48,7 +50,7 @@ const Scene = () => {
     <>
       <mesh name="box" position={[0, 0, 0]} rotation={[0, 0, 0]}>
         <boxGeometry />
-        <meshBasicMaterial color={0xffffff} />
+        <meshBasicMaterial color={0x8fffff} />
       </mesh>
       <mesh name="sphere" position={[0, 0, 0]} rotation={[0, 0, 0]}>
         <sphereGeometry args={[4, 22, 8]} />
@@ -63,18 +65,22 @@ const Scene = () => {
 };
 
 const ThreeScene = () => {
+  const canvasRef = useRef();
   return (
     <Canvas
+    ref={canvasRef}
       onCreated={({ camera, gl }) => handleResize({ camera, gl })}
-      style={{ background: '#000000' }}
+      // camera={{ position: [0, 0, 15], near: 0.0011, far: 10000 }}
+      style={{ width: '100%', height: '140vh', background: '#000000'}} 
     >
       <Scene />
     </Canvas>
   );
 };
 
+
 const handleResize = ({ camera, gl }) => {
-  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.aspect = (window.innerWidth / window.innerHeight);
   camera.updateProjectionMatrix();
   gl.setSize(window.innerWidth, window.innerHeight);
 };

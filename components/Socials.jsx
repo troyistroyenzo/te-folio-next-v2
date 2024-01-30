@@ -66,7 +66,7 @@ export default function BasicStatistics() {
   ];
 
   return (
-    <Box bg="black" maxW="9xl" mx="auto" pt={5} px={{ base: 1, sm: 4, md: 8 }}>
+    <Box bg="black" maxW="9xl" mx="auto" pt={20} px={{ base: 1, sm: 4, md: 8 }}>
         <chakra.div maxW="7xl" mx={'auto'} pt={5} px={{ base: 2, sm: 12, md: 17 }} bg={'black'} theme={customTheme}>
             <Flex justifyContent="center" flexWrap="wrap">
                 {socialIcons.map((social, index) => (

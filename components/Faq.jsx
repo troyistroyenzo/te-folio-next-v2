@@ -33,7 +33,7 @@ const accordionItems = [
 export default function SimpleAccordion() {
   return (
     <Flex
-      minH={'50vh'}
+      minH={'20vh'}
       align={'center'}
       justify={'center'}
       color={'white'}
