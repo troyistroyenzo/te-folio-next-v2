@@ -14,7 +14,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
     <head>
       <meta charSet="utf-8" />
-      <title>Troy Enzo</title>
+      <title>TROY ENZO</title>
+      <meta name="Builder, Artist & Entrepreneur" content="I'm a builder and creator leveraging AI, web3, agritech, fintech, edtech, and data science to develop innovative solutions. I collaborate to solve problems and deliver tangible value and results. My vision is to help people through disruptive tech and platforms. I constantly learn and innovate to make an industry impact. My strengths are solving technical and business challenges, venturing into new landscapes, fostering growth, and thriving on collaboration. I build with purpose - to glorify God by serving others." />
     </head>
     <body className={inter.className}>
      <ChakraProvider>

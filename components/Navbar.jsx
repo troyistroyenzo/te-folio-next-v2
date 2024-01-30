@@ -1,5 +1,8 @@
 'use client'
 
+import banner from '../assets/images/logo/TE.png'
+
+import Image from 'next/image'
 import {
   Box,
   Flex,
@@ -48,15 +51,25 @@ export default function WithSubnavigation() {
             aria-label={'Toggle Navigation'}
           />
         </Flex>
-        <Flex flex={{ base: 2 }} justify={{ base: 'center', md: 'start' }}>
-          
-
+        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+        <Text
+            textAlign={useBreakpointValue({ base: 'center', md: 'right' })}
+            fontFamily={'Inter'}
+            fontWeight={900}
+            maxWidth={100}
+            color={useColorModeValue('white.800', 'white')}
+            mx={useBreakpointValue({ base: 'auto', md: 0 })} // Center the logo horizontally
+          >
+            TROY ENZO
+            
+      </Text>
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
           </Flex>
         </Flex>
-
       </Flex>
+
+      
 
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
@@ -141,6 +154,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
           justify={'flex-end'}
           align={'center'}
           flex={1}>
+             
           <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
         </Flex>
       </Stack>

@@ -1,16 +1,17 @@
 'use client'
 
-import imagz from '../assets/images/logo/TE.png'
+import logo from '../assets/images/logo/TE.png'
 
+import Image from 'next/image'
 import {
   Box,
   chakra,
   Container,
   Stack,
   Text,
+  Link,
   useColorModeValue,
   VisuallyHidden,
-  Image,
 } from '@chakra-ui/react';
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { ReactNode } from 'react';
@@ -19,7 +20,9 @@ const Logo = (props) => {
   return (
     <Image
     alt={'Troy Enzo logo'}
-    src={imagz}
+    src={logo}
+    width={65} // Set the desired width (50% smaller)
+    height={65} // Set the desired height (50% smaller)
   />
   );
 };
@@ -60,14 +63,14 @@ export default function SmallWithLogoLeft() {
         bg={'black'}
         color={'white'}
         as={Stack}
-        maxW={'6xl'}
-        py={4}
+        maxW={'9xl'}
+        py={9}
         direction={{ base: 'column', md: 'row' }}
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}
       >
-        <Logo />
+        <Logo/>
         <Text>© 2024 Troy Enzo. All rights reserved</Text>
         <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Twitter'} href={'#'}>
