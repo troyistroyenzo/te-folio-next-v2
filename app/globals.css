@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+@font-face {
   font-family: 'Inter';
   src: url(../assets/fonts/Inter-Black.ttf);
+  /* Add additional src lines for different font file formats, if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Inter';
   max-width: 100%;
   
 }

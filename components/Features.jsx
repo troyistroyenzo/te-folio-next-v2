@@ -45,7 +45,7 @@ import {
             <Stack p={15} direction="column" align="center" justify="center">
               <Box as={'header'} textAlign="center">
                 <Heading
-                  fontFamily={'inter'}
+                  fontFamily={'Inter'}
                   lineHeight={1.1}
                   fontWeight={700}
                   letterSpacing={'-2.25'}
@@ -57,7 +57,7 @@ import {
                 </Heading>
                 <br />
                 <Text
-                  fontFamily={'inter'}
+                  fontFamily={'Inter'}
                   color={'#C2B498'}
                   fontWeight={500}
                   fontSize={'1xl'}
