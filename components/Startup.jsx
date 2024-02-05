@@ -65,14 +65,14 @@ import {
           _hover={{ boxShadow: 'md' }}
         >
           <Flex align="start">
-            <Box pr={{ base: 1, md: 4 }}>
-              <Image src={iconSrc} boxSize="100px" />
-            </Box>
+          <Box minW={'20vw'}pr={{ base: 2, md: 18 }}>
+            <Image src={iconSrc} alt={title} boxSize="15vw" objectFit="cover"/>
+          </Box>
             <VStack align="start" spacing={1} pl={{ base: 0, md: 2 }}>
-              <StatLabel color='white'  fontSize="xl" fontWeight="bold" isTruncated>
+              <StatLabel color="white" fontSize="xl" fontWeight="bold" isTruncated>
                 {title}
               </StatLabel>
-              <StatNumber color='#C2B498' fontSize="md" fontWeight="medium">
+              <StatNumber color="#C2B498" fontSize="md" fontWeight="medium">
                 {stat}
               </StatNumber>
             </VStack>
