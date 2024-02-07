@@ -72,7 +72,7 @@ export default function SmallWithLogoLeft() {
       >
         <Logo/>
         <Text>© 2024 Troy Enzo. All rights reserved</Text>
-        <Stack direction={'row'} spacing={6}>
+        {/* <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Twitter'} href={'#'}>
             <FaTwitter />
           </SocialButton>
@@ -82,7 +82,7 @@ export default function SmallWithLogoLeft() {
           <SocialButton label={'Instagram'} href={'#'}>
             <FaInstagram />
           </SocialButton>
-        </Stack>
+        </Stack> */}
       </Container>
     </Box>
   );

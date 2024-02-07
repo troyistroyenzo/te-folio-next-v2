@@ -15,9 +15,7 @@ import { Client } from "@/prismic-configuration";
 export default function Home() {
   return (
     <>
-      <Hero>
-        <div>HELLO THER</div>
-      </Hero>
+      <Hero/>
       <Socials/>
       <Features/>
       <Startup/>

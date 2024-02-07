@@ -19,8 +19,8 @@ import {
   
   const CONTENT = [
     {
-      title: 'About Me',
-      description: 'Hi, I am Troy. Builder, Artist, and Entrepreneur.',
+      title: 'Hi 👋 I am Troy. ',
+      description: 'A Builder in mind, Artist in vision, and Entrepreneur by heart.',
       imageSrc: 'https://res.cloudinary.com/dlgyqy69b/image/upload/v1706345091/troy-expanded-dp_phhhrh.png',
       imageWidth: '50%', // Adjust as needed
     },
@@ -38,12 +38,12 @@ import {
     },
     {
       title: 'Content Creator',
-      description: 'I create meaninful content',
+      description: 'I create both film professionally and for online content',
       imageSrc: 'https://res.cloudinary.com/dlgyqy69b/image/upload/v1707116159/ryanmbarber_Create_an_illustration_of_a_fantasy_themed_mural_fe_9fd25c90-ac77-4b74-8fbe-8827af450339_oclck3.png',
       imageWidth: '75%', // Adjust as needed
     },
     {
-      title: 'Startup Venturer',
+      title: 'Venturer Developer',
       description: 'I venture into different businesses that provide value to people',
       imageSrc: 'https://res.cloudinary.com/dlgyqy69b/image/upload/v1707116119/Troy_scattered_abstract_elements_with_negative_space_chaotic_mu_ac2b3041-e29b-4f3c-8bf8-205fab9d67e6_uier9u.png',
       imageWidth: '75%', // Adjust as needed

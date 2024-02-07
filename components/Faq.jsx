@@ -21,12 +21,12 @@ const accordionItems = [
   {
     question: 'What services do you offer?',
     answer:
-      'From hosting, multimedia, programming, teaching.',
+      'I have a wide array of skills ranging from tech all the way to arts. Please message me at yortozne@gmail.com for any project proposals',
   },
   {
     question: 'Why is the website still incomplete?',
     answer:
-      'I am still building this site ;)',
+      'Rome was not built in a day. This portfolio will take time.',
   },
 ];
 

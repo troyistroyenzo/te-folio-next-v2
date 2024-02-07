@@ -19,14 +19,14 @@ import {
       stat: 'Virtual Art gallery bringing expressive art pieces closer to you',
       iconSrc: 'https://cdn.beacons.ai/user_content/yy6chWZC8RM8vwu6vUeAJb7FIp53/referenced_images/535cd742-09c9-45ce-9fcc-36703fa67f8c__link-in-bio__links-block__home__9a178ce8-5d24-42a5-8d59-f5828669923e__86fac12a-8cdc-461c-ba86-e485dee2eda4__1ee33c4d-8cb4-403d-91a1-b7527d4a1ac9.jpg?t=1697721008298',
       link: 'http://artpilgrim.ph/',
-      backgroundImage: 'linear-gradient(78deg, rgb(59,178,200) 0%, rgb(106,107,206) 100%)',
+      bg: 'red',
     },
     {
       title: 'VeriFi',
       stat: 'A Decentralized Ecosystem for streamlining digital assets',
       iconSrc: 'https://cdn.beacons.ai/user_content/yy6chWZC8RM8vwu6vUeAJb7FIp53/referenced_images/b334ae7b-bbd1-4dd0-9f29-0cdc64625ca6__link-in-bio__links-block__home__9a178ce8-5d24-42a5-8d59-f5828669923e__1cd1b946-3009-4f59-9126-e49e7605ed19__9f4e6321-ccdf-4447-a8c4-05ab2f116a1a.jpg?t=1697718861396',
       link: 'https://verifi-dapp.vercel.app/',
-      backgroundImage: 'linear-gradient(78deg, rgb(59,178,200) 0%, rgb(106,107,206) 100%)',
+      bg: 'linear-gradient(78deg, rgb(59,178,200) 0%, rgb(106,107,206) 100%)',
     },
     {
       title: 'Playdex',
@@ -40,14 +40,14 @@ import {
       stat: 'A hypercasual gaming e-sports gaming app -  play and win prizes!',
       iconSrc: 'https://cdn.beacons.ai/user_content/yy6chWZC8RM8vwu6vUeAJb7FIp53/referenced_images/f21c0aff-6a43-49f6-b59c-4903e2ee0c8d__link-in-bio__links-block__home__9a178ce8-5d24-42a5-8d59-f5828669923e__419ab83a-011d-4e57-b3fc-84b11f3cd37a__c8efd2af-5114-45ae-af14-0224eb179ca8.jpg?t=1697719719847',
       link: 'https://playwinpremio.com/',
-      backgroundImage: 'linear-gradient(78deg, rgb(59,178,200) 0%, rgb(106,107,206) 100%)',
+      bg: 'linear-gradient(78deg, rgb(59,178,200) 0%, rgb(106,107,206) 100%)',
     },
     {
       title: 'Grohax',
       stat: 'An AI-Powered Growth Hacking software dedicated to help you finding more users',
       iconSrc: 'https://cdn.beacons.ai/user_content/yy6chWZC8RM8vwu6vUeAJb7FIp53/referenced_images/035ce9e7-44fc-4463-a917-4b7f1e95ad31__link-in-bio__links-block__home__9a178ce8-5d24-42a5-8d59-f5828669923e__28ea739f-f9d1-49bf-a3cd-dd458cca7aad__c98a887b-0211-414e-94ad-9a7b442a10ee.png?t=1690341116618',
       link: 'https://grohax.pro/',
-      backgroundImage: 'linear-gradient(78deg, rgb(59,178,200) 0%, rgb(106,107,206) 100%)',
+      bg: 'linear-gradient(78deg, rgb(59,178,200) 0%, rgb(106,107,206) 100%)',
     },
   ];
   
@@ -85,14 +85,19 @@ import {
   export default function BasicStatistics() {
     return (
       <Box bg="black" maxW="9xl" mx="auto" pt={5} px={{ base: 1, sm: 4, md: 8 }}>
-        <chakra.h1 textAlign="center" fontSize="4xl" py={10} fontWeight="bold">
-        </chakra.h1>
-        <SimpleGrid bg="black" columns={{ base: 1, md: 1 }} spacing={{ base: 5, lg: 2 }}>
+        <chakra.h1 textAlign="center" fontSize="4xl" py={10} fontWeight="bold"></chakra.h1>
+        <SimpleGrid columns={{ base: 1, md: 1 }} spacing={{ base: 5, lg: 2 }}>
           {STATISTICS_CONTENT.map((content, index) => (
-            <StatsCard key={index} title={content.title} stat={content.stat} iconSrc={content.iconSrc} link={content.link} backgroundImage={'red'} />
+            <StatsCard
+              key={index}
+              title={content.title}
+              stat={content.stat}
+              iconSrc={content.iconSrc}
+              link={content.link}
+              // bg={content.bg}
+            />
           ))}
         </SimpleGrid>
       </Box>
     );
   }
-  
