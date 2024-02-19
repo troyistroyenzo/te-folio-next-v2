@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
-import { Box, IconButton, useBreakpointValue, Stack, Heading, Text, Container } from '@chakra-ui/react';
+import { Box, IconButton, useBreakpointValue, Stack, Heading, Text, Slider, Container } from '@chakra-ui/react';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
-import Slider from 'react-slick';
 import ReactPlayer from 'react-player';
 
 const settings = {
@@ -23,7 +22,7 @@ const cards = [
     alt: 'Director, Lead Videographer, Video Editor',
   },
   {
-    title: 'SB19 Live at the Araneta Colisuem (2022)',
+    title: 'THIS IS A SECONE (2022)',
     video: 'https://www.youtube.com/watch?v=_Npc61m8NiI&ab_channel=TroyEnzo',
     thumbnail: '',
     alt: 'Design Projects 1 Alt Text',

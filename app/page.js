@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar"
 import Features from "@/components/Features";
 import Startup from "@/components/Startup"
 import Film from "@/components/Film"
+import CTA from "@/components/CTA"
 import Faq from "@/components/Faq"
 import { Client } from "@/prismic-configuration";
 
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <>
       <Hero/>
+      <CTA/>
       <Socials/>
       <Features/>
       <Startup/>

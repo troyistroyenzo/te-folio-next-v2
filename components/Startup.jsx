@@ -8,6 +8,8 @@ import {
     StatLabel,
     StatNumber,
     VStack,
+    Heading,
+    Text,
     Link,
     useColorModeValue,
   } from '@chakra-ui/react';
@@ -85,7 +87,7 @@ import {
   export default function BasicStatistics() {
     return (
       <Box bg="black" maxW="9xl" mx="auto" pt={5} px={{ base: 1, sm: 4, md: 8 }}>
-        <chakra.h1 textAlign="center" fontSize="4xl" py={10} fontWeight="bold"></chakra.h1>
+        <chakra.h1 textAlign="center" fontSize="4xl" color={"#C2B498"} py={10} fontWeight="bold">Projects</chakra.h1>
         <SimpleGrid columns={{ base: 1, md: 1 }} spacing={{ base: 5, lg: 2 }}>
           {STATISTICS_CONTENT.map((content, index) => (
             <StatsCard

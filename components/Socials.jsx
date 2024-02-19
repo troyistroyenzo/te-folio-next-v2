@@ -1,6 +1,6 @@
 import React from 'react';
 import { Flex, chakra, useColorModeValue, extendTheme, Box } from '@chakra-ui/react';
-import { FaInstagram, FaYoutube, FaLinkedin, FaGithub, FaTwitter, FaFacebook } from 'react-icons/fa';
+import { FaInstagram, FaYoutube, FaLinkedin, FaGithub, FaTwitter, FaFacebook, FaTiktok, FaGumro} from 'react-icons/fa';
 
 const customTheme = extendTheme({
   styles: {
@@ -55,6 +55,10 @@ export default function BasicStatistics() {
       icon: <FaGithub />,
       link: 'https://github.com/troyistroyenzo',
     },
+    {
+      icon: <FaTiktok />,
+      link: 'https://tiktok.com/@troy.enzo',
+    },
     // {
     //   icon: <FaTwitter />,
     //   link: 'https://twitter.com/example',
@@ -66,8 +70,8 @@ export default function BasicStatistics() {
   ];
 
   return (
-    <Box bg="black" maxW="9xl" mx="auto" pt={20} px={{ base: 1, sm: 4, md: 8 }}>
-        <chakra.div maxW="7xl" mx={'auto'} pt={5} px={{ base: 2, sm: 12, md: 17 }} bg={'black'} theme={customTheme}>
+    <Box bg="black" maxW="9xl" mx="auto" p={30} px={{ base: 1, sm: 4, md: 8 }}>
+        <chakra.div maxW="7xl" mx={'auto'} pt={50} px={{ base: 2, sm: 12, md: 17 }} bg={'black'} theme={customTheme}>
             <Flex justifyContent="center" flexWrap="wrap">
                 {socialIcons.map((social, index) => (
                 <GlitchIcon key={index} icon={social.icon} link={social.link} />

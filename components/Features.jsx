@@ -16,36 +16,38 @@ import {
     List,
     ListItem,
   } from '@chakra-ui/react';
+
+  import Spline from '@splinetool/react-spline';
   
   const CONTENT = [
     {
-      title: 'Hi 👋 I am Troy. ',
-      description: 'A Builder in mind, Artist in vision, and Entrepreneur by heart.',
-      imageSrc: 'https://res.cloudinary.com/dlgyqy69b/image/upload/v1706345091/troy-expanded-dp_phhhrh.png',
-      imageWidth: '50%', // Adjust as needed
-    },
-    {
-      title: 'My Industry',
-      description: 'I mainly work in the web3 & fintech startup community',
+      title: 'Why I do what I do',
+      description: 'Learning new things is in my life blood. I love building things and creating value for people.',
       imageSrc: 'https://res.cloudinary.com/dlgyqy69b/image/upload/v1707116159/IMG_3974_jysu47.jpg',
       imageWidth: '75%', // Adjust as needed
     },
     {
-      title: 'Fullstack Engineer',
-      description: 'I build full-stack applications both in the web2 and web3 space',
+      title: 'Technopreneur',
+      description: 'I work mainly in the web3 / crypto space, specializing with building early stage startups. My goal is to provide value to users through using cutting-edge technologies.',
       imageSrc: 'https://res.cloudinary.com/dlgyqy69b/image/upload/v1707116143/Troy_cover_photo_for_a_feature_related_to_database_collection_m_7f424921-6052-4718-a632-049b59f4ec50_ixnt18.png',
       imageWidth: '75%', // Adjust as needed
     },
     {
-      title: 'Content Creator',
-      description: 'I create both film professionally and for online content',
+      title: 'Creative',
+      description: 'I am a creative at heart. Film has been my ultimate passion since I was a kid. I create film content mainly through instagram.',
       imageSrc: 'https://res.cloudinary.com/dlgyqy69b/image/upload/v1707116159/ryanmbarber_Create_an_illustration_of_a_fantasy_themed_mural_fe_9fd25c90-ac77-4b74-8fbe-8827af450339_oclck3.png',
       imageWidth: '75%', // Adjust as needed
     },
     {
-      title: 'Venturer Developer',
-      description: 'I venture into different businesses that provide value to people',
+      title: 'Builder',
+      description: 'As a fullstack developer, I specialize in smart contracts, data science and website development. I like to build software and create meaningful platforms for people to use',
       imageSrc: 'https://res.cloudinary.com/dlgyqy69b/image/upload/v1707116119/Troy_scattered_abstract_elements_with_negative_space_chaotic_mu_ac2b3041-e29b-4f3c-8bf8-205fab9d67e6_uier9u.png',
+      imageWidth: '75%', // Adjust as needed
+    },
+    {
+      title: 'Venture',
+      description: 'I constantly explore new and different ventures. I like solving problems and creating solutions.',
+      imageSrc: 'https://res.cloudinary.com/dlgyqy69b/image/upload/v1708331359/Art_Pilgrim_Mural_movt5a.png',
       imageWidth: '75%', // Adjust as needed
     },
     // {
@@ -95,12 +97,16 @@ import {
                 alt={'product image'}
                 src={content.imageSrc}
                 align={'center'}
-                w={content.imageWidth}
+                // w={content.imageWidth}
               />
+              
             </Flex>
+         
           </SimpleGrid>
+          
         ))}
       </Container>
+      
     );
   }
   
