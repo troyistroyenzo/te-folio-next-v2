@@ -6,7 +6,7 @@ export default function WithBackgroundImage() {
   return (
     <Flex
       w={'full'}
-      h={'120vh'}
+      h={'90vh'}
     //   backgroundImage={
     //     '../assets/images/video/video.mov'
     //   }
@@ -17,7 +17,7 @@ export default function WithBackgroundImage() {
         justify={'center'}
         px={useBreakpointValue({ base: 4, md: 8 })}
         bg={'black'}>
-        <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
+        <Stack maxW={'full'} align={'flex-start'} spacing={5}>
         <Text
             color={'#C2B498'}
             fontWeight={700}
@@ -27,7 +27,7 @@ export default function WithBackgroundImage() {
           </Text>
           <Text
             color={'white'}
-            fontWeight={700}
+            fontWeight={500}
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: '2xl', md: '4xl' })}>
             I build startups, I venture into different projects and I create meaningful content. 
