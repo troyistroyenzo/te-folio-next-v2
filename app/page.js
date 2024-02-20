@@ -12,12 +12,10 @@ import Faq from "@/components/Faq"
 import { Client } from "@/prismic-configuration";
 
 
-
 export default function Home() {
   return (
     <>
       <Hero/>
-      <CTA/>
       <Socials/>
       <Features/>
       <Startup/>
