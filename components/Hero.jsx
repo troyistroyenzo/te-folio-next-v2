@@ -228,7 +228,7 @@ const ThreeScene = () => {
       <Canvas
         ref={canvasRef}
         onCreated={({ camera, gl }) => handleResize({ camera, gl })}
-        style={{ background: '#000000', height: '250vh',}} 
+        style={{ background: '#000000', height: '200vh',}} 
       >
         <Scene />
       </Canvas>
