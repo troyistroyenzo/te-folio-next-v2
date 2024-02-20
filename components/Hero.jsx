@@ -2,13 +2,95 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { SphereGeometry, BoxGeometry, TorusGeometry, Mesh, Color } from 'three';
 import React, { useRef } from 'react';
 import { Stack, Flex, Button, Text, VStack, useBreakpointValue } from '@chakra-ui/react'
+import { chakra, useColorModeValue, extendTheme, Box } from '@chakra-ui/react';
+import { FaInstagram, FaYoutube, FaLinkedin, FaGithub, FaTwitter, FaFacebook, FaTiktok, FaGumro} from 'react-icons/fa';
 
+const customTheme = extendTheme({
+  styles: {
+    global: {
+      '@keyframes glitch': {
+        '2%, 64%': { transform: 'translate2d(-2px, 0) skew(0deg)' },
+        '4%, 60%': { transform: 'translate2d(4px, 0) skew(0deg)' },
+        '6%, 20%': { transform: 'translate2d(-6px, 0) skew(0deg)' },
+        '8%, 50%': { transform: 'translate2d(2px, 0) skew(0deg)' },
+        '0%, 100%': { transform: 'translate2d(0, 0) skew(0deg)' },
+      },
+    },
+  },
+});
+
+function GlitchIcon({ icon, link }) {
+  return (
+    <chakra.a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      display="flex"
+      alignItems="center"
+      justifyContent="center"
+      w="70px" // Adjust the size as needed
+      h="70px" // Adjust the size as needed
+      fontSize="2.5em" // Make the icons bigger
+      color="white" // Make icons white
+      transition="color 0.3s"
+      _hover={{ color: '#C2B498', animation: 'glitch 1s infinite linear' }} // Add glitch effect on hover
+    >
+      {icon}
+    </chakra.a>
+  );
+}
+
+const Socials= () => {
+  const socialIcons = [
+    {
+      icon: <FaInstagram />,
+      link: 'https://www.instagram.com/troyenzo',
+    },
+    {
+      icon: <FaYoutube />,
+      link: 'https://www.youtube.com/troyenzo',
+    },
+    {
+      icon: <FaLinkedin />,
+      link: 'https://www.linkedin.com/in/troyenzo/',
+    },
+    {
+      icon: <FaGithub />,
+      link: 'https://github.com/troyistroyenzo',
+    },
+    {
+      icon: <FaTiktok />,
+      link: 'https://tiktok.com/@troy.enzo',
+    },
+    // {
+    //   icon: <FaTwitter />,
+    //   link: 'https://twitter.com/example',
+    // },
+    // {
+    //   icon: <FaFacebook />,
+    //   link: 'https://facebook.com/example',
+    // },
+  ];
+
+  return (
+    <Box maxW="9xl" mx="auto"  px={{ base: 1, sm: 2, md: 8 }}>
+        <chakra.div maxW="7xl" mx={'auto'}  px={{ base: 2, sm: 12, md: 17 }} theme={customTheme}>
+            <Flex justifyContent="center" flexWrap="nowrap">
+                {socialIcons.map((social, index) => (
+                <GlitchIcon key={index} icon={social.icon} link={social.link} />
+                ))}
+            </Flex>
+        </chakra.div>
+    </Box>
+    
+  );
+}
 
 const WithBackgroundImage = () => {
   return (
     <Flex
         w={'full'}
-        h={'90vh'}
+        h={'100vh'}
       >
         <VStack
           w={'full'}
@@ -140,18 +222,21 @@ const Scene = () => {
 
 const ThreeScene = () => {
   const canvasRef = useRef();
-
+//  width: '100%',
   return (
     <div style={{ position: 'relative' }}>
       <Canvas
         ref={canvasRef}
         onCreated={({ camera, gl }) => handleResize({ camera, gl })}
-        style={{ background: '#000000' }} // width: '100%', height: '140vh',
+        style={{ background: '#000000', height: '250vh',}} 
       >
         <Scene />
       </Canvas>
       <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
           <WithBackgroundImage />
+        </div>
+        <div style={{ position: 'absolute', top: '85%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+          <Socials />
         </div>
     </div>
     

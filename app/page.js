@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Hero/>
-      <Socials/>
+      {/* <Socials/> */}
       <Features/>
       <Startup/>
       <Film/>
