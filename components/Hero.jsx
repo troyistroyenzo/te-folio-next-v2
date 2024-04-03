@@ -104,7 +104,7 @@ const WithBackgroundImage = () => {
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: '5xl', md: '5xl' })}
           >
-            hi👋, i'm troy
+            hi👋, im troy
           </Text>
           <Text
             color={'white'}
