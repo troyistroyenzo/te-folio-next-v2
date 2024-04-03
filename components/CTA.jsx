@@ -23,21 +23,21 @@ export default function WithBackgroundImage() {
             fontWeight={700}
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
-            Hi 👋 I am Troy
+            hi 👋, i am troy
           </Text>
           <Text
             color={'white'}
             fontWeight={500}
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: '2xl', md: '4xl' })}>
-            I build startups, I venture into different projects and I create meaningful content. 
+            i build stuff. 
           </Text>
           <Text
             color={'white'}
             fontWeight={700}
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: '2xl', md: '4xl' })}>
-            I created this website to explain the different things I do.
+            scroll down to see more of what i do 👀
           </Text>
           <Stack direction={'row'}>
             <a href="https://yatjbdeqemy.typeform.com/to/CRiUwSeP">

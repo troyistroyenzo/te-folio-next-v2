@@ -17,8 +17,15 @@ import {
   
   const STATISTICS_CONTENT = [
     {
+      title: 'Root & Grounds (beta)',
+      stat: 'A coffee shop providing fresh produce of coffee beans and healthy products',
+      iconSrc: 'https://root-grounds.vercel.app/favicon.ico',
+      link: 'https://root-grounds.vercel.app/',
+      bg: 'linear-gradient(78deg, rgb(59,178,200) 0%, rgb(106,107,206) 100%)',
+    },
+    {
       title: 'Art Pilgrim',
-      stat: 'Virtual Art gallery bringing expressive art pieces closer to you',
+      stat: 'A virtual Art gallery bringing expressive art pieces closer to you',
       iconSrc: 'https://cdn.beacons.ai/user_content/yy6chWZC8RM8vwu6vUeAJb7FIp53/referenced_images/535cd742-09c9-45ce-9fcc-36703fa67f8c__link-in-bio__links-block__home__9a178ce8-5d24-42a5-8d59-f5828669923e__86fac12a-8cdc-461c-ba86-e485dee2eda4__1ee33c4d-8cb4-403d-91a1-b7527d4a1ac9.jpg?t=1697721008298',
       link: 'http://artpilgrim.ph/',
       bg: 'red',
@@ -51,6 +58,7 @@ import {
       link: 'https://grohax.pro/',
       bg: 'linear-gradient(78deg, rgb(59,178,200) 0%, rgb(106,107,206) 100%)',
     },
+    
   ];
   
   function StatsCard(props) {
@@ -68,7 +76,7 @@ import {
         >
           <Flex align="start">
           <Box minW={'20vw'}pr={{ base: 2, md: 18 }}>
-            <Image src={iconSrc} alt={title} boxSize="15vw" objectFit="cover"/>
+            <Image src={iconSrc} alt={title} boxSize="15vw" objectFit="inherit"/>
           </Box>
             <VStack align="start" spacing={1} pl={{ base: 0, md: 2 }}>
               <StatLabel color="white" fontSize="xl" fontWeight="bold" isTruncated>
@@ -77,13 +85,18 @@ import {
               <StatNumber color="#C2B498" fontSize="md" fontWeight="medium">
                 {stat}
               </StatNumber>
+              {/* <Box minW={'20vw'} pr={{ base: 2, md: 18 }}>
+              <Box className="iframe-container" style={{ height: '100%', overflow: 'hidden' }}>
+                <iframe src={link} frameBorder="0" style={{ width: '100%', height: '15vw', minHeight: '200px' }} allowFullScreen></iframe>
+              </Box>
+            </Box> */}
             </VStack>
           </Flex>
         </Stat>
       </Link>
     );
   }
-  
+
   export default function BasicStatistics() {
     return (
       <Box bg="black" maxW="9xl" mx="auto" pt={5} px={{ base: 1, sm: 4, md: 8 }}>

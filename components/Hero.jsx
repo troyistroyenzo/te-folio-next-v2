@@ -99,12 +99,20 @@ const WithBackgroundImage = () => {
         >
         <Stack maxW={'full'} align={'flex-start'} spacing={5}>
           <Text
-            color={'#C2B498'}
+            color={'#ffd400'}
             fontWeight={700}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}
+            fontSize={useBreakpointValue({ base: '5xl', md: '5xl' })}
           >
-            Hi 👋 I am Troy
+            hi👋, i'm troy
+          </Text>
+          <Text
+            color={'white'}
+            fontWeight={700}
+            lineHeight={1.2}
+            fontSize={useBreakpointValue({ base: '2xl', md: '4xl' })}
+          >
+           i like to build cool stuff.
           </Text>
           <Text
             color={'white'}
@@ -112,33 +120,46 @@ const WithBackgroundImage = () => {
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: '2xl', md: '4xl' })}
           >
-            I build startups, I venture into different projects and I create meaningful content.
-          </Text>
-          <Text
-            color={'white'}
-            fontWeight={700}
-            lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: '2xl', md: '4xl' })}
-          >
-            I created this website to explain the different things I do.
+            scroll down to see more of my works 👀
           </Text>
           <Stack direction={'row'}>
             <a href="https://yatjbdeqemy.typeform.com/to/CRiUwSeP">
-              <Button
-                size={'lg'}
-                color={'black'}
-                bg={'white'}
+            <Button
+                color={'white'}
+                bg={'transparent'}
+                border={'2px'}
                 fontWeight={650}
-                px={6}
-                colorScheme={'purple'}
-                _hover={{ bg: 'linear-gradient(78deg, rgba(159, 122, 234, 1) 0%, rgb(255, 97, 218) 50%)' }}
+                fontSize={'3xl'}
+                padding={'2rem'}
+                sx={{
+                  
+                  _hover: {
+                    bg: 'linear-gradient(78deg, rgba(159, 122, 234, 0.7) 0%, rgba(255, 97, 218, 0.7) 50%)', // Original gradient with added transparency
+                    textDecoration: 'none', // Example: Remove underline on hover (optional, adjust as needed)
+                  },
+                  // Adding a gradient and transparency on hover for the new color scheme
+                  _before: {
+                    content: '""',
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    bg: 'linear-gradient(to right, rgba(87, 161, 152, 0.7), rgba(87, 161, 152, 0.3))', // Adjust the gradient as needed
+                    opacity: 0,
+                    transition: 'opacity 0.2s ease-in-out',
+                  },
+                  _hover: {
+                    _before: {
+                      opacity: 1,
+                    },
+                  },
+                }}
               >
-                {/* leftIcon={<PlayIcon h={4} w={4} color={'gray.00'} />}  */}
-                Contact Me 📩
+                Contact Me
               </Button>
-            </a>
-
-            <a href="https://1979823900472.gumroad.com/">
+              </a>
+            {/* <a href="https://1979823900472.gumroad.com/">
               <Button
                 size={'lg'}
                 fontWeight={650}
@@ -147,10 +168,10 @@ const WithBackgroundImage = () => {
                 bg={'white'}
                 _hover={{ bg: 'linear-gradient(78deg, rgba(159, 122, 234, 1) 0%, rgb(255, 97, 218) 50%)' }}
               >
-                {/* leftIcon={<PlayIcon h={4} w={4} color={'gray.00'} />}  */}
+                 leftIcon={<PlayIcon h={4} w={4} color={'gray.00'} />}
                 Products ⚙️
               </Button>
-            </a>
+            </a> */}
           </Stack>
         </Stack>
       </VStack>
@@ -210,11 +231,11 @@ const Scene = () => {
       </mesh>
       <mesh name="sphere" position={[0, 0, 0]} rotation={[0, 0, 0]}>
         <dodecahedronGeometry args={[4, 2, 8]} />
-        <meshBasicMaterial color={0xC2B498} wireframe />
+        <meshBasicMaterial color={0x57A198} wireframe />
       </mesh>
       <mesh name="torus" position={[0, 0, 0]} rotation={[0, 0, 0]}>
         <torusGeometry args={[3, 1, 16, 50]} />
-        <meshBasicMaterial color={0xC2B498} wireframe />
+        <meshBasicMaterial color={0x68AEA2} wireframe />
       </mesh>
     </>
   );

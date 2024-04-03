@@ -17,8 +17,9 @@ export default function Home() {
     <>
       <Hero/>
       {/* <Socials/> */}
-      <Features/>
       <Startup/>
+      <Features/>
+      
       <Film/>
       <Faq/>
     </>

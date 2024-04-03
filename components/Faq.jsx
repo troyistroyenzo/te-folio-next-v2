@@ -21,7 +21,7 @@ const accordionItems = [
   {
     question: 'What services do you offer?',
     answer:
-      'I have a wide array of skills ranging from tech all the way to arts. Please message me at yortozne@gmail.com for any project proposals',
+      'I have a wide array of skills ranging from software development all the way to multimedia. Please message me at yortozne@gmail.com for any project proposals',
   },
   {
     question: 'Why is the website still incomplete?',
