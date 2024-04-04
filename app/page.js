@@ -2,12 +2,10 @@
 import Prismic from "prismic-javascript"
 import Image from "next/image";
 import Hero from "../components/Hero"
-import Socials from "../components/Socials"
 import Navbar from "../components/Navbar"
 import Features from "@/components/Features";
 import Startup from "@/components/Startup"
 import Film from "@/components/Film"
-import CTA from "@/components/CTA"
 import Faq from "@/components/Faq"
 import { Client } from "@/prismic-configuration";
 

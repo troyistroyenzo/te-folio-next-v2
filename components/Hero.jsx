@@ -110,17 +110,17 @@ const WithBackgroundImage = () => {
             color={'white'}
             fontWeight={700}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: '2xl', md: '4xl' })}
+            fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}
           >
            i like to build cool stuff.
           </Text>
           <Text
             color={'white'}
-            fontWeight={500}
+            fontWeight={700}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: '2xl', md: '4xl' })}
+            fontSize={useBreakpointValue({ base: '2xl', md: '3xl' })}
           >
-            scroll down to see more of my works 👀
+            you are probably here because you asked what i do. so scroll down to see more of my works 👀
           </Text>
           <Stack direction={'row'}>
             <a href="https://yatjbdeqemy.typeform.com/to/CRiUwSeP">
