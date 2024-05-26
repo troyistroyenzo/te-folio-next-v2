@@ -17,9 +17,9 @@ import {
   
   const STATISTICS_CONTENT = [
     {
-      title: 'Root & Grounds (beta)',
+      title: 'Root & Grounds',
       stat: 'A coffee shop providing fresh produce of coffee beans and healthy products',
-      iconSrc: 'https://root-grounds.vercel.app/favicon.ico',
+      iconSrc: 'https://rootandgrounds.co/_next/static/media/redlogo.24765268.svg',
       link: 'https://root-grounds.vercel.app/',
       bg: 'linear-gradient(78deg, rgb(59,178,200) 0%, rgb(106,107,206) 100%)',
     },
@@ -30,13 +30,7 @@ import {
       link: 'http://artpilgrim.ph/',
       bg: 'red',
     },
-    {
-      title: 'VeriFi',
-      stat: 'A Decentralized Ecosystem for streamlining digital assets',
-      iconSrc: 'https://verifi-dapp.vercel.app/favicon.ico',
-      link: 'https://verifi-dapp.vercel.app/',
-      bg: 'linear-gradient(78deg, rgb(59,178,200) 0%, rgb(106,107,206) 100%)',
-    },
+    
     {
       title: 'Playdex',
       stat: 'A web3 gaming NFT rental marketplace supercharging social web3 gaming communities',
@@ -49,6 +43,13 @@ import {
       stat: 'A hypercasual gaming e-sports gaming app -  play and win prizes!',
       iconSrc: 'https://framerusercontent.com/images/PLmwqdKjBNYtZan6Sk7urHTODJ8.png',
       link: 'https://playwinpremio.com/',
+      bg: 'linear-gradient(78deg, rgb(59,178,200) 0%, rgb(106,107,206) 100%)',
+    },
+    {
+      title: 'VeriFi',
+      stat: 'A Decentralized Ecosystem for streamlining digital assets',
+      iconSrc: 'https://verifi-dapp.vercel.app/favicon.ico',
+      link: 'https://verifi-dapp.vercel.app/',
       bg: 'linear-gradient(78deg, rgb(59,178,200) 0%, rgb(106,107,206) 100%)',
     },
     {

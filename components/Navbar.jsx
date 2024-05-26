@@ -1,8 +1,6 @@
 'use client'
 
-import banner from '../assets/images/logo/TE.png'
 
-import Image from 'next/image'
 import {
   Box,
   Flex,
@@ -13,6 +11,7 @@ import {
   Collapse,
   Icon,
   Popover,
+  Image,
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
@@ -44,24 +43,22 @@ export default function WithSubnavigation() {
           flex={{ base: 1, md: 'auto' }}
           ml={{ base: -2 }}
           display={{ base: 'flex', md: 'none' }}>
-          <IconButton
+          {/* <IconButton
             onClick={onToggle}
             icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
             variant={'ghost'}
             aria-label={'Toggle Navigation'}
-          />
+          /> */}
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
         <Text
-            textAlign={useBreakpointValue({ base: 'center', md: 'right' })}
+            textAlign={useBreakpointValue({ base: 'center', md: 'center' })}
             fontFamily={'Inter'}
             fontWeight={900}
             maxWidth={100}
-            color={useColorModeValue('white.800', 'white')}
             mx={useBreakpointValue({ base: 'auto', md: 0 })} // Center the logo horizontally
           >
-            TROY ENZO
-            
+          <Image width={'45%'} alt={'Logo troy'} src={'https://res.cloudinary.com/dlgyqy69b/image/upload/v1716713090/TE_vatmr2.png'}/> 
       </Text>
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
@@ -71,9 +68,9 @@ export default function WithSubnavigation() {
 
       
 
-      <Collapse in={isOpen} animateOpacity>
+      {/* <Collapse in={isOpen} animateOpacity>
         <MobileNav />
-      </Collapse>
+      </Collapse> */}
     </Box>
   )
 }
@@ -200,7 +197,7 @@ const MobileNavItem = ({ label, children, href }) => {
         )}
       </Box>
 
-      <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
+      {/* <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
         <Stack
           mt={2}
           pl={4}
@@ -215,7 +212,7 @@ const MobileNavItem = ({ label, children, href }) => {
               </Box>
             ))}
         </Stack>
-      </Collapse>
+      </Collapse> */}
     </Stack>
   )
 }

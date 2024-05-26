@@ -94,6 +94,7 @@ const WithBackgroundImage = () => {
       >
         <VStack
           w={'full'}
+
           justify={'center'}
           px={useBreakpointValue({ base: 4, md: 8 })}
         >
@@ -112,7 +113,7 @@ const WithBackgroundImage = () => {
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}
           >
-           i like to build cool stuff.
+           i build cool stuff.
           </Text>
           <Text
             color={'white'}
@@ -120,7 +121,7 @@ const WithBackgroundImage = () => {
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: '2xl', md: '3xl' })}
           >
-            you are probably here because you asked what i do. so scroll down to see more of my works 👀
+            you are probably here because you asked what i do. scroll down to see more 👀
           </Text>
           <Stack direction={'row'}>
             <a href="https://yatjbdeqemy.typeform.com/to/CRiUwSeP">
@@ -249,7 +250,7 @@ const ThreeScene = () => {
       <Canvas
         ref={canvasRef}
         onCreated={({ camera, gl }) => handleResize({ camera, gl })}
-        style={{ background: '#000000', height: '200vh',}} 
+        style={{ background: '#000000', height: '110vh',}} 
       >
         <Scene />
       </Canvas>
