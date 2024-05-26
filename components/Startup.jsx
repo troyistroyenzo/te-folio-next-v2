@@ -18,7 +18,7 @@ import {
   const STATISTICS_CONTENT = [
     {
       title: 'Root & Grounds',
-      stat: 'A coffee shop providing fresh produce of coffee beans and healthy products',
+      stat: 'A one-stop-shop freshly roasted single-origin coffee beans and healthy products',
       iconSrc: 'https://rootandgrounds.co/_next/static/media/redlogo.24765268.svg',
       link: 'https://root-grounds.vercel.app/',
       bg: 'linear-gradient(78deg, rgb(59,178,200) 0%, rgb(106,107,206) 100%)',
@@ -76,14 +76,14 @@ import {
           _hover={{ boxShadow: 'md' }}
         >
           <Flex align="start">
-          <Box minW={'20vw'}pr={{ base: 2, md: 18 }}>
-            <Image src={iconSrc} alt={title} boxSize="15vw" objectFit="inherit"/>
+          <Box minW={'30vw'} pr={{ base: 2, md: 1 }} p={5}>
+            <Image src={iconSrc} alt={title} boxSize="16vw" objectFit="inherit"/>
           </Box>
             <VStack align="start" spacing={1} pl={{ base: 0, md: 2 }}>
               <StatLabel color="white" fontSize="xl" fontWeight="bold" isTruncated>
                 {title}
               </StatLabel>
-              <StatNumber color="#C2B498" fontSize="md" fontWeight="medium">
+              <StatNumber color="#C2B498" fontSize="sm" fontWeight="medium">
                 {stat}
               </StatNumber>
               {/* <Box minW={'20vw'} pr={{ base: 2, md: 18 }}>

@@ -55,7 +55,7 @@ import {
   
   export default function Simple() {
     return (
-      <Container maxW={'100%'} background={'black'} padding={0}>
+      <Container maxW={'100%'} background={'black'} padding={10}>
         {CONTENT.map((content, index) => (
           <SimpleGrid
             key={index}
@@ -63,7 +63,7 @@ import {
             spacing={{ base: 8, md: 90 }}
             py={{ base: 18, md: 24 }}
           >
-            <Stack p={15} direction="column" align="center" justify="center">
+            <Stack direction="column" align="center" justify="center">
             <Heading
                   fontFamily={'Inter'}
                   lineHeight={1.1}
