@@ -90,7 +90,7 @@ const WithBackgroundImage = () => {
   return (
     <Flex
         w={'full'}
-        h={'100vh'}
+        h={'50vh'}
       >
         <VStack
           w={'full'}

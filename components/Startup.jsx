@@ -67,7 +67,7 @@ import {
     return (
       <Link href={link} isExternal>
         <Stat
-          px={{ base: 2, md: 8 }}
+          px={{ base: 2, md: 2 }}
           py={7}
           shadow="xl"
           border="1px solid"
@@ -100,7 +100,7 @@ import {
 
   export default function BasicStatistics() {
     return (
-      <Box bg="black" maxW="9xl" mx="auto" pt={5} px={{ base: 1, sm: 4, md: 8 }}>
+      <Box bg="black" maxW="9xl" mx="auto" pt={5} px={{ base: 1, sm: 1, md: 1 }} p={10}>
         <chakra.h1 textAlign="center" fontSize="4xl" color={"#C2B498"} py={10} fontWeight="bold">Projects</chakra.h1>
         <SimpleGrid columns={{ base: 1, md: 1 }} spacing={{ base: 5, lg: 2 }}>
           {STATISTICS_CONTENT.map((content, index) => (
