@@ -101,6 +101,7 @@ const WithBackgroundImage = () => {
         <Stack maxW={'full'} align={'flex-start'} spacing={5}>
           <Text
             color={'#ffd400'}
+            outlineColor={'black'}
             fontWeight={700}
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: '5xl', md: '5xl' })}
@@ -113,20 +114,20 @@ const WithBackgroundImage = () => {
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}
           >
-           i build cool stuff.
+           host, builder, artist and entrepreneur.
           </Text>
           <Text
-            color={'white'}
+            color={'#C1FF72'}
             fontWeight={700}
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: '2xl', md: '3xl' })}
           >
-            you are probably here because you asked what i do. scroll down to see more 👀
+            i build startups. you are probably here because you asked what i do. scroll down to see more 👀
           </Text>
           <Stack direction={'row'}>
-            <a href="https://yatjbdeqemy.typeform.com/to/CRiUwSeP">
+            <a href="https://poplme.co/hash/JjvF98f1/1/s">
             <Button
-                color={'white'}
+                color={'#9AFF1A'}
                 bg={'transparent'}
                 border={'2px'}
                 fontWeight={650}
@@ -157,7 +158,7 @@ const WithBackgroundImage = () => {
                   },
                 }}
               >
-                Contact Me
+                Get In Touch
               </Button>
               </a>
             {/* <a href="https://1979823900472.gumroad.com/">
@@ -231,12 +232,12 @@ const Scene = () => {
         <meshBasicMaterial color={0x8fffff} wireframe />
       </mesh>
       <mesh name="sphere" position={[0, 0, 0]} rotation={[0, 0, 0]}>
-        <dodecahedronGeometry args={[4, 2, 8]} />
+        <dodecahedronGeometry args={[4, 2, 80]} />
         <meshBasicMaterial color={0x57A198} wireframe />
       </mesh>
       <mesh name="torus" position={[0, 0, 0]} rotation={[0, 0, 0]}>
         <torusGeometry args={[3, 1, 16, 50]} />
-        <meshBasicMaterial color={0x68AEA2} wireframe />
+        <meshBasicMaterial color={0xC1FF72} wireframe />
       </mesh>
     </>
   );
@@ -250,7 +251,7 @@ const ThreeScene = () => {
       <Canvas
         ref={canvasRef}
         onCreated={({ camera, gl }) => handleResize({ camera, gl })}
-        style={{ background: '#000000', height: '110vh',}} 
+        style={{ background: '#000000', height: '120vh',}} 
       >
         <Scene />
       </Canvas>

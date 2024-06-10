@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     </head>
     <body className={inter.className}>
      <ChakraProvider>
-          <Navbar/>
+          {/* <Navbar/> */}
           {children}
           <Footer/>
           <PrismicPreview repositoryName={repositoryName}/>
