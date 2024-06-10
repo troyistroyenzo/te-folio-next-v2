@@ -114,7 +114,7 @@ const WithBackgroundImage = () => {
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}
           >
-           host, builder, artist and entrepreneur.
+           host, filmmaker, technopreneur and athlete.
           </Text>
           <Text
             color={'#C1FF72'}
