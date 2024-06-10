@@ -90,7 +90,7 @@ const WithBackgroundImage = () => {
   return (
     <Flex
         w={'full'}
-        h={'50vh'}
+        h={'150vh'}
       >
         <VStack
           w={'full'}
@@ -251,7 +251,7 @@ const ThreeScene = () => {
       <Canvas
         ref={canvasRef}
         onCreated={({ camera, gl }) => handleResize({ camera, gl })}
-        style={{ background: '#000000', height: '150vh',}} 
+        style={{ background: '#000000', height: '100vh',}} 
       >
         <Scene />
       </Canvas>
