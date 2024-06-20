@@ -20,7 +20,7 @@ import {
       title: 'Root & Grounds',
       stat: 'A one-stop-shop freshly roasted single-origin coffee beans and healthy products',
       iconSrc: 'https://rootandgrounds.co/_next/static/media/redlogo.24765268.svg',
-      link: 'https://root-grounds.vercel.app/',
+      link: 'https://rootandgrounds.co//',
       bg: 'linear-gradient(78deg, rgb(59,178,200) 0%, rgb(106,107,206) 100%)',
     },
     {

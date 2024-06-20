@@ -62,6 +62,10 @@ const Socials= () => {
       icon: <FaTiktok />,
       link: 'https://tiktok.com/@troy.enzo',
     },
+    {
+      icon: <FaFacebook />,
+      link: 'https://www.facebook.com/profile.php?id=100082000010897',
+    },
     // {
     //   icon: <FaTwitter />,
     //   link: 'https://twitter.com/example',
